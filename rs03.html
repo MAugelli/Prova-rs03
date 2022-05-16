@@ -4,221 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>RS 03</title>
 </head>
 <body>
 
-<!--Versione di prova solo per capire se a livello di HTML ho diviso bene le parti-->
+
 <main>
-<article class="title-section"> <!--Titolo con link per la sezione con tutte le notizie-->
-    <hr>
-    <span>Music</span>
-    <a class="all-news" href="musicnews.html">View all</a>
-</article>
+    
+<header>
+    <div class="title-section"> <!--Titolo con link per la sezione con tutte le notizie-->
+        <hr>
+        <span>Music</span> <!--Titolo della sezione-->
+        <a class="all-news" href="musicnews.html">View all</a> <!--Link che manda a una pagina con tutte le notizie di quella sezione-->
+        <input type="button" value="hide"> <!--Bottone per nascondere la sezione deile news-->
+    </div>
+</header>
+
 <section class="news-group"> <!--Raggruppa le anteprime delle notizie-->
-    <article class="news-article"> <!--Anteprima della notizia-->
-        <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/hof-split.jpg?resize=940,705&w=940" alt="">
-        <br>
-        <a class="news-section" href="music-news.html">Music news</a>
-        <p class="news-title">Eminem, Dolly Parton, Duran Duran, Lionel Richie Lead Rock & Roll Hall of Fame 2022 Class</p>
-        <p class="news-preview">Pat Benatar, Judas Priest, Carly Simon, Eurythmics, and Jimmy Jam & Terry Lewis will also enter the Cleveland institution</p>
-        <cite class="news-author">By Andy Greene</cite>
-    </article>
-    <article class="news-article">
-        <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-8.53.58-AM.jpg?resize=940,705&w=940" alt="">
-        <br>
-        <a class="news-section" href="music-news.html">Music news</a>
-        <p class="news-title">Watch Sheryl Crow Join Lucius for ‘Dance Around It’ on ‘Colbert’</p>
-        <p class="news-preview">Celisse and members of Stay Human were also included in the performance of the upbeat song</p>
-        <cite class="news-author">By Emily Zemler</cite>
-    </article>
-    <article class="news-article">
-        <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-7.46.08-AM.jpg?resize=940,705&w=940" alt="">
-        <br>
-        <a class="news-section" href="music-news.html">Music news</a>
-        <p class="news-title">Watch Father John Misty’s Intimate ‘Kiss Me (I Loved You)’ Performance on ‘Fallon’</p>
-        <p class="news-preview">Musician's new album Chloë and the Next 20th Century is out now</p>
-        <cite class="news-author">By Emily Zemler</cite>
-    </article>
-    <article class="news-article">
-        <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-12.56.15-PM.png?resize=940,705&w=940" alt="">
-        <br>
-        <a class="news-section" href="music-news.html">Music news</a>
-        <p class="news-title">Kehlani Draws Inspiration From 2000s Girl Groups, 1920s Glam in ‘Up All Night’ Video</p>
-        <p class="news-preview">R&B singer calls new album Blue Water Road "an emotional journey, a sexual journey, and a spiritual journey"</p>
-        <cite class="news-author">By Kat Bouza</cite>
-    </article>
-    <article class="news-article">
-        <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/Halsey-1.jpeg?resize=940,705&w=940" alt="">
-        <br>
-        <a class="news-section" href="music-news.html">Music news</a>
-        <p class="news-title">‘This Decision Will Spiral Into Lethal Situations’: Halsey Calls to Protect Abortion Rights</p>
-        <p class="news-preview">"This is a cruel attack on our fundamental right to choose if and when to have a child," musician says</p>
-        <cite class="news-author">By Althea Legaspi</cite>
-    </article>
+    
+    <div class="news-preview1">
+        <article class="news-preview-article"> <!--Anteprima della notizia-->
+            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/hof-split.jpg?resize=940,705&w=940" alt=""> <!--Immagine di copertina dell'articolo-->
+            <br>  
+            <a class="news-section" href="music-news.html">Music news</a> <!--Link che descrive una categoria specifica e indirizza a una pagina con tutte le notizie di quella categoria-->
+            <p class="news-title">Eminem, Dolly Parton, Duran Duran, Lionel Richie Lead Rock & Roll Hall of Fame 2022 Class</p> <!--Titolo dell'articolo-->
+            <p class="news-text">Pat Benatar, Judas Priest, Carly Simon, Eurythmics, and Jimmy Jam & Terry Lewis will also enter the Cleveland institution</p> <!--Antecipazione della notizia-->
+            <cite class="news-author">By Andy Greene</cite> <!--Autore della notizia-->
+        </article>
+    </div>
+
+    <div class="news-preview2"> 
+        <article class="news-preview-article">
+            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-8.53.58-AM.jpg?resize=940,705&w=940" alt="">
+            <br>
+            <a class="news-section" href="music-news.html">Music news</a>
+            <p class="news-title">Watch Sheryl Crow Join Lucius for ‘Dance Around It’ on ‘Colbert’</p>
+            <p class="news-text">Celisse and members of Stay Human were also included in the performance of the upbeat song</p>
+            <cite class="news-author">By Emily Zemler</cite>
+        </article>
+    </div>
+    
+    <div class="news-preview3"> 
+        <article class="news-preview-article">
+            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-7.46.08-AM.jpg?resize=940,705&w=940" alt="">
+            <br>
+            <a class="news-section" href="music-news.html">Music news</a>
+            <p class="news-title">Watch Father John Misty’s Intimate ‘Kiss Me (I Loved You)’ Performance on ‘Fallon’</p>
+            <p class="news-text">Musician's new album Chloë and the Next 20th Century is out now</p>
+            <cite class="news-author">By Emily Zemler</cite>
+        </article>
+    </div>
+    
+    <div class="news-preview4"> 
+        <article class="news-preview-article">
+            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-12.56.15-PM.png?resize=940,705&w=940" alt="">
+            <br>
+            <a class="news-section" href="music-news.html">Music news</a>
+            <p class="news-title">Kehlani Draws Inspiration From 2000s Girl Groups, 1920s Glam in ‘Up All Night’ Video</p>
+            <p class="news-text">R&B singer calls new album Blue Water Road "an emotional journey, a sexual journey, and a spiritual journey"</p>
+            <cite class="news-author">By Kat Bouza</cite>
+        </article>
+    </div>
+    
+    <div class="news-preview5">
+        <article class="news-preview-article">
+            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Halsey-1.jpeg?resize=940,705&w=940" alt="">
+            <br>
+            <a class="news-section" href="music-news.html">Music news</a>
+            <p class="news-title">‘This Decision Will Spiral Into Lethal Situations’: Halsey Calls to Protect Abortion Rights</p>
+            <p class="news-text">"This is a cruel attack on our fundamental right to choose if and when to have a child," musician says</p>
+            <cite class="news-author">By Althea Legaspi</cite>
+        </article>
+    </div>
+
 </section>
-<article class="list-box"> <!--piccolo box a sinistracon link che rimanda a una lista di album-->
-    <a href="https://www.rollingstone.com/music/music-lists/greatest-debut-songs-singles-990470/"> The 100 Greatest Debut Singles of All Time</a>
-</article>
-<!--Questa parte è diversa dal pdf-->
+
+<div class="list-box"> <!--piccolo box a sinistra con link che rimanda a una lista di album-->
+    <a id="link-list" href="https://www.rollingstone.com/music/music-lists/greatest-debut-songs-singles-990470/" class="link-box"> The 100 Greatest Debut Singles of All Time</a>
+</div>
+
+<div class="album-title"> <!--Titolo del box delle recensioni degli album-->
+    <span id="titolo-rosso">Album</span>
+    <span id="titolo-nero">Reviews</span>
+</div>
 <section class="album-review"> <!--Box con le anteprime delle recensioni di alcuni album-->
-    <article class="album-title"> <!--Titolo del box delle recensioni degli album-->
-        <span id="titolo-rosso">Album</span>
-        <span id="titolo-nero">Reviews</span>
-    </article>
-    <article class="album-review-box"> <!--Box con le recensioni del album. (Non so se conviene usare una lista per ogni album o una tabella che ragruppa tutte le recensioni)-->
-        <ul class="review-box"> <!--Ho usato le liste per questa prova-->
-            <li class="album-img">
+    
+    <article class="album-review-box1"> <!--Contiene tutte le recenzioni degli album-->
+        <div class="review-box"> <!--Recenzione singola-->
+            <div class="album-img">
                 <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
-            </li>
-            <li class="star-rating">   
-                <div class="reting"> <!--Ho copiato dalla pagina questa parte-->
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                    <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                </div> <!--Fine parte copiata-->
-            </li>
-            <li class="artist-neme">
+            </div>
+            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
+                <img src="" alt="">
+            </div>
+            <div class="artist-neme"> <!--Nome dell'artista-->
                 <h4>Arcade Fire</h4>
-            </li>
-            <li class="album-name">
+            </div>
+            <div class="album-name"> <!--Nome dell'album-->
                 <h5>WE</h5>
-            </li>
-            <li class="album-review">
+            </div>
+            <div class="album-review"> <!--Anteprima della recenzione-->
                 <p>Their first album in in five years sounds like a band circling the wagons</p>
-            </li>
-            <li class="link-review">
+            </div>
+            <div class="link-review"> <!--Link recenzione completa-->
                 <a href="albumfullreview.html">Read more</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </article>
-    <article class="album-review-box"> <!--Box con le recensioni del album. (Non so se conviene usare una lista per ogni album o una tabella che ragruppa tutte le recensioni)-->
-        <ul class="review-box"> <!--Ho usato le liste per questa prova-->
-            <li class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/Blackstar.Clean_.jpg?crop=1:1,smart&w=225" alt="">
-            </li>
-            <li class="star-rating">   
-                <div class="reting"> <!--Ho copiato dalla pagina questa parte-->
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                    <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                </div> <!--Fine parte copiata-->
-            </li>
-            <li class="artist-neme">
-                <h4>Black Star</h4>
-            </li>
-            <li class="album-name">
-                <h5>NO FEAR OF TIME</h5>
-            </li>
-            <li class="album-review">
-                <p>The beloved Nineties duo's new work resounds like a Mandarin manifesto for the 99 percent.</p>
-            </li>
-            <li class="link-review">
+    
+    <article class="album-review-box2"> <!--Contiene tutte le recenzioni degli album-->
+        <div class="review-box"> <!--Recenzione singola-->
+            <div class="album-img">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
+            </div>
+            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
+                <img src="" alt="">
+            </div>
+            <div class="artist-neme"> <!--Nome dell'artista-->
+                <h4>Arcade Fire</h4>
+            </div>
+            <div class="album-name"> <!--Nome dell'album-->
+                <h5>WE</h5>
+            </div>
+            <div class="album-review"> <!--Anteprima della recenzione-->
+                <p>Their first album in in five years sounds like a band circling the wagons</p>
+            </div>
+            <div class="link-review"> <!--Link recenzione completa-->
                 <a href="albumfullreview.html">Read more</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </article>
-    <article class="album-review-box"> <!--Box con le recensioni del album. (Non so se conviene usare una lista per ogni album o una tabella che ragruppa tutte le recensioni)-->
-        <ul class="review-box"> <!--Ho usato le liste per questa prova-->
-            <li class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/Sharon-Van-Etten-Weve-Been-Going-About-This-All-Wrong-Cover-Artwork.jpg?crop=1:1,smart&w=225" alt="">
-            </li>
-            <li class="star-rating">   
-                <div class="reting"> <!--Ho copiato dalla pagina questa parte perchè non so come farla :,-) -->
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                    <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                </div> <!--Fine parte copiata-->
-            </li>
-            <li class="artist-neme">
-                <h4>Sharon Von etten</h4>
-            </li>
-            <li class="album-name">
-                <h5>WE’VE BEEN GOING ABOUT THIS ALL WRONG</h5>
-            </li>
-            <li class="album-review">
-                <p>Her sixth album is an impressive mid-career statement on restlessness, contentment and everything in between.</p>
-            </li>
-            <li class="link-review">
+
+    <article class="album-review-box3"> <!--Contiene tutte le recenzioni degli album-->
+        <div class="review-box"> <!--Recenzione singola-->
+            <div class="album-img">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
+            </div>
+            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
+                <img src="" alt="">
+            </div>
+            <div class="artist-neme"> <!--Nome dell'artista-->
+                <h4>Arcade Fire</h4>
+            </div>
+            <div class="album-name"> <!--Nome dell'album-->
+                <h5>WE</h5>
+            </div>
+            <div class="album-review"> <!--Anteprima della recenzione-->
+                <p>Their first album in in five years sounds like a band circling the wagons</p>
+            </div>
+            <div class="link-review"> <!--Link recenzione completa-->
                 <a href="albumfullreview.html">Read more</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </article>
-    <article class="album-review-box"> <!--Box con le recensioni del album. (Non so se conviene usare una lista per ogni album o una tabella che ragruppa tutte le recensioni)-->
-        <ul class="review-box"> <!--Ho usato le liste per questa prova-->
-            <li class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/04/future-i-never-liked-you.jpg?crop=1:1,smart&w=225" alt="">
-            </li>
-            <li class="star-rating">   
-                <div class="reting"> <!--Ho copiato dalla pagina questa parte perchè non so come farla :,-) -->
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                    <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                    <svg class="c-rating__star c-rating__star--active">
-                        <use xlink:href="#svg-icon-star"></use>
-                    </svg>
-                </div> <!--Fine parte copiata-->
-            </li>
-            <li class="artist-neme">
-                <h4>Future</h4>
-            </li>
-            <li class="album-name">
-                <h5>I NEER LIKED YOU</h5>
-            </li>
-            <li class="album-review">
-                <p>His new LP won't rank among his best, but it has a compositional sweep often absent from his work.</p>
-            </li>
-            <li class="link-review">
+
+    <article class="album-review-box4"> <!--Contiene tutte le recenzioni degli album-->
+        <div class="review-box"> <!--Recenzione singola-->
+            <div class="album-img">
+                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
+            </div>
+            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
+                <img src="" alt="">
+            </div>
+            <div class="artist-neme"> <!--Nome dell'artista-->
+                <h4>Arcade Fire</h4>
+            </div>
+            <div class="album-name"> <!--Nome dell'album-->
+                <h5>WE</h5>
+            </div>
+            <div class="album-review"> <!--Anteprima della recenzione-->
+                <p>Their first album in in five years sounds like a band circling the wagons</p>
+            </div>
+            <div class="link-review"> <!--Link recenzione completa-->
                 <a href="albumfullreview.html">Read more</a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </article>
+    
 </section>
+
 </main>
     
 </body>
