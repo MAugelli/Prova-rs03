@@ -1,190 +1,267 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>RS 03</title>
 </head>
+
 <body>
 
 
-<main>
-    
-<header>
-    <div class="title-section"> <!--Titolo con link per la sezione con tutte le notizie-->
-        <hr>
-        <span>Music</span> <!--Titolo della sezione-->
-        <a class="all-news" href="musicnews.html">View all</a> <!--Link che manda a una pagina con tutte le notizie di quella sezione-->
-        <input type="button" value="hide"> <!--Bottone per nascondere la sezione deile news-->
-    </div>
-</header>
+    <main>
 
-<section class="news-group"> <!--Raggruppa le anteprime delle notizie-->
-    
-    <div class="news-preview1">
-        <article class="news-preview-article"> <!--Anteprima della notizia-->
-            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/hof-split.jpg?resize=940,705&w=940" alt=""> <!--Immagine di copertina dell'articolo-->
-            <br>  
-            <a class="news-section" href="music-news.html">Music news</a> <!--Link che descrive una categoria specifica e indirizza a una pagina con tutte le notizie di quella categoria-->
-            <p class="news-title">Eminem, Dolly Parton, Duran Duran, Lionel Richie Lead Rock & Roll Hall of Fame 2022 Class</p> <!--Titolo dell'articolo-->
-            <p class="news-text">Pat Benatar, Judas Priest, Carly Simon, Eurythmics, and Jimmy Jam & Terry Lewis will also enter the Cleveland institution</p> <!--Antecipazione della notizia-->
-            <cite class="news-author">By Andy Greene</cite> <!--Autore della notizia-->
-        </article>
-    </div>
+        <section class="music-box">
 
-    <div class="news-preview2"> 
-        <article class="news-preview-article">
-            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-8.53.58-AM.jpg?resize=940,705&w=940" alt="">
-            <br>
-            <a class="news-section" href="music-news.html">Music news</a>
-            <p class="news-title">Watch Sheryl Crow Join Lucius for ‘Dance Around It’ on ‘Colbert’</p>
-            <p class="news-text">Celisse and members of Stay Human were also included in the performance of the upbeat song</p>
-            <cite class="news-author">By Emily Zemler</cite>
-        </article>
-    </div>
-    
-    <div class="news-preview3"> 
-        <article class="news-preview-article">
-            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-7.46.08-AM.jpg?resize=940,705&w=940" alt="">
-            <br>
-            <a class="news-section" href="music-news.html">Music news</a>
-            <p class="news-title">Watch Father John Misty’s Intimate ‘Kiss Me (I Loved You)’ Performance on ‘Fallon’</p>
-            <p class="news-text">Musician's new album Chloë and the Next 20th Century is out now</p>
-            <cite class="news-author">By Emily Zemler</cite>
-        </article>
-    </div>
-    
-    <div class="news-preview4"> 
-        <article class="news-preview-article">
-            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-12.56.15-PM.png?resize=940,705&w=940" alt="">
-            <br>
-            <a class="news-section" href="music-news.html">Music news</a>
-            <p class="news-title">Kehlani Draws Inspiration From 2000s Girl Groups, 1920s Glam in ‘Up All Night’ Video</p>
-            <p class="news-text">R&B singer calls new album Blue Water Road "an emotional journey, a sexual journey, and a spiritual journey"</p>
-            <cite class="news-author">By Kat Bouza</cite>
-        </article>
-    </div>
-    
-    <div class="news-preview5">
-        <article class="news-preview-article">
-            <img class="news-img" src="https://www.rollingstone.com/wp-content/uploads/2022/05/Halsey-1.jpeg?resize=940,705&w=940" alt="">
-            <br>
-            <a class="news-section" href="music-news.html">Music news</a>
-            <p class="news-title">‘This Decision Will Spiral Into Lethal Situations’: Halsey Calls to Protect Abortion Rights</p>
-            <p class="news-text">"This is a cruel attack on our fundamental right to choose if and when to have a child," musician says</p>
-            <cite class="news-author">By Althea Legaspi</cite>
-        </article>
-    </div>
+            <header>
+                <!--Titolo con link per la sezione con tutte le notizie-->
+                <ul class="title-section">
+                    <li>
+                        <!--Titolo della sezione-->
+                        <span id="title">Music</span>
+                    </li>
+                    <li>
+                        <!--Link che manda a una pagina con tutte le notizie di quella sezione-->
+                        <a id="all-news" href="musicnews.html">VIEW ALL</a>
+                    </li>
+                    <li>
+                        <!--Bottone per nascondere la sezione deile news-->
+                        <a href="#">Hide</a>
+                    </li>    
+                </ul>
+            </header>
 
-</section>
+            <section class="news-group">
+                <!--Raggruppa le anteprime delle notizie-->
 
-<div class="list-box"> <!--piccolo box a sinistra con link che rimanda a una lista di album-->
-    <a id="link-list" href="https://www.rollingstone.com/music/music-lists/greatest-debut-songs-singles-990470/" class="link-box"> The 100 Greatest Debut Singles of All Time</a>
-</div>
+                <div class="news-preview1">
+                    <article class="news-preview-article">
+                        <!--Anteprima della notizia-->
+                        <img class="news-img"
+                            src="https://www.rollingstone.com/wp-content/uploads/2022/05/hof-split.jpg?resize=940,705&w=940"
+                            alt="">
+                        <!--Immagine di copertina dell'articolo-->
+                        <br>
+                        <a class="news-section" href="music-news.html">MUSIC NEWS</a>
+                        <!--Link che descrive una categoria specifica e indirizza a una pagina con tutte le notizie di quella categoria-->
+                        <p class="news-title">Eminem, Dolly Parton, Duran Duran, Lionel Richie Lead Rock & Roll Hall of
+                            Fame 2022 Class</p>
+                        <!--Titolo dell'articolo-->
+                        <p class="news-text">Pat Benatar, Judas Priest, Carly Simon, Eurythmics, and Jimmy Jam & Terry
+                            Lewis will also enter the Cleveland institution</p>
+                        <!--Antecipazione della notizia-->
+                        <cite class="news-author">By Andy Greene</cite>
+                        <!--Autore della notizia-->
+                    </article>
+                </div>
 
-<div class="album-title"> <!--Titolo del box delle recensioni degli album-->
-    <span id="titolo-rosso">Album</span>
-    <span id="titolo-nero">Reviews</span>
-</div>
-<section class="album-review"> <!--Box con le anteprime delle recensioni di alcuni album-->
-    
-    <article class="album-review-box1"> <!--Contiene tutte le recenzioni degli album-->
-        <div class="review-box"> <!--Recenzione singola-->
-            <div class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
-            </div>
-            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
-                <img src="" alt="">
-            </div>
-            <div class="artist-neme"> <!--Nome dell'artista-->
-                <h4>Arcade Fire</h4>
-            </div>
-            <div class="album-name"> <!--Nome dell'album-->
-                <h5>WE</h5>
-            </div>
-            <div class="album-review"> <!--Anteprima della recenzione-->
-                <p>Their first album in in five years sounds like a band circling the wagons</p>
-            </div>
-            <div class="link-review"> <!--Link recenzione completa-->
-                <a href="albumfullreview.html">Read more</a>
-            </div>
-        </div>
-    </article>
-    
-    <article class="album-review-box2"> <!--Contiene tutte le recenzioni degli album-->
-        <div class="review-box"> <!--Recenzione singola-->
-            <div class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
-            </div>
-            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
-                <img src="" alt="">
-            </div>
-            <div class="artist-neme"> <!--Nome dell'artista-->
-                <h4>Arcade Fire</h4>
-            </div>
-            <div class="album-name"> <!--Nome dell'album-->
-                <h5>WE</h5>
-            </div>
-            <div class="album-review"> <!--Anteprima della recenzione-->
-                <p>Their first album in in five years sounds like a band circling the wagons</p>
-            </div>
-            <div class="link-review"> <!--Link recenzione completa-->
-                <a href="albumfullreview.html">Read more</a>
-            </div>
-        </div>
-    </article>
+                <div class="news-preview2">
+                    <article class="news-preview-article">
+                        <img class="news-img"
+                            src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-8.53.58-AM.jpg?resize=940,705&w=940"
+                            alt="">
+                        <br>
+                        <a class="news-section" href="music-news.html">MUSIC NEWS</a>
+                        <p class="news-title">Watch Sheryl Crow Join Lucius for ‘Dance Around It’ on ‘Colbert’</p>
+                        <p class="news-text">Celisse and members of Stay Human were also included in the performance of
+                            the upbeat song</p>
+                        <cite class="news-author">By Emily Zemler</cite>
+                    </article>
+                </div>
 
-    <article class="album-review-box3"> <!--Contiene tutte le recenzioni degli album-->
-        <div class="review-box"> <!--Recenzione singola-->
-            <div class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
-            </div>
-            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
-                <img src="" alt="">
-            </div>
-            <div class="artist-neme"> <!--Nome dell'artista-->
-                <h4>Arcade Fire</h4>
-            </div>
-            <div class="album-name"> <!--Nome dell'album-->
-                <h5>WE</h5>
-            </div>
-            <div class="album-review"> <!--Anteprima della recenzione-->
-                <p>Their first album in in five years sounds like a band circling the wagons</p>
-            </div>
-            <div class="link-review"> <!--Link recenzione completa-->
-                <a href="albumfullreview.html">Read more</a>
-            </div>
-        </div>
-    </article>
+                <div class="news-preview3">
+                    <article class="news-preview-article">
+                        <img class="news-img"
+                            src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-7.46.08-AM.jpg?resize=940,705&w=940"
+                            alt="">
+                        <br>
+                        <a class="news-section" href="music-news.html">MUSIC NEWS</a>
+                        <p class="news-title">Watch Father John Misty’s Intimate ‘Kiss Me (I Loved You)’ Performance on
+                            ‘Fallon’</p>
+                        <p class="news-text">Musician's new album Chloë and the Next 20th Century is out now</p>
+                        <cite class="news-author">By Emily Zemler</cite>
+                    </article>
+                </div>
 
-    <article class="album-review-box4"> <!--Contiene tutte le recenzioni degli album-->
-        <div class="review-box"> <!--Recenzione singola-->
-            <div class="album-img">
-                <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225" alt="">
-            </div>
-            <div class="star-rating"> <!--Contiene la valutazione rappresentata con delle stelle rosse-->   
-                <img src="" alt="">
-            </div>
-            <div class="artist-neme"> <!--Nome dell'artista-->
-                <h4>Arcade Fire</h4>
-            </div>
-            <div class="album-name"> <!--Nome dell'album-->
-                <h5>WE</h5>
-            </div>
-            <div class="album-review"> <!--Anteprima della recenzione-->
-                <p>Their first album in in five years sounds like a band circling the wagons</p>
-            </div>
-            <div class="link-review"> <!--Link recenzione completa-->
-                <a href="albumfullreview.html">Read more</a>
-            </div>
-        </div>
-    </article>
-    
-</section>
+                <div class="news-preview4">
+                    <article class="news-preview-article">
+                        <img class="news-img"
+                            src="https://www.rollingstone.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-12.56.15-PM.png?resize=940,705&w=940"
+                            alt="">
+                        <br>
+                        <a class="news-section" href="music-news.html">MUSIC NEWS</a>
+                        <p class="news-title">Kehlani Draws Inspiration From 2000s Girl Groups, 1920s Glam in ‘Up All
+                            Night’ Video</p>
+                        <p class="news-text">R&B singer calls new album Blue Water Road "an emotional journey, a sexual
+                            journey, and a spiritual journey"</p>
+                        <cite class="news-author">By Kat Bouza</cite>
+                    </article>
+                </div>
 
-</main>
-    
+                <div class="news-preview5">
+                    <article class="news-preview-article">
+                        <img class="news-img"
+                            src="https://www.rollingstone.com/wp-content/uploads/2022/05/Halsey-1.jpeg?resize=940,705&w=940"
+                            alt="">
+                        <br>
+                        <a class="news-section" href="music-news.html">MUSIC NEWS</a>
+                        <p class="news-title">‘This Decision Will Spiral Into Lethal Situations’: Halsey Calls to
+                            Protect Abortion Rights</p>
+                        <p class="news-text">"This is a cruel attack on our fundamental right to choose if and when to
+                            have a child," musician says</p>
+                        <cite class="news-author">By Althea Legaspi</cite>
+                    </article>
+                </div>
+                
+                <div class="list-box">
+                    <!--piccolo box a sinistra con link che rimanda a una lista di album-->
+                    <a id="link-list"
+                        href="https://www.rollingstone.com/music/music-lists/greatest-debut-songs-singles-990470/"
+                        class="link-box"> The 100 Greatest Debut Singles of All Time</a>
+                </div>
+            </section>
+
+
+            <div class="album-title">
+                <!--Titolo del box delle recensioni degli album-->
+                <span id="titolo-rosso">Album</span>
+                <span id="titolo-nero">Reviews</span>
+            </div>
+            <section class="album-review">
+                <!--Box con le anteprime delle recensioni di alcuni album-->
+
+                <article class="album-review-box1">
+                    <!--Contiene tutte le recenzioni degli album-->
+                    <div class="review-box">
+                        <!--Recenzione singola-->
+                        <div class="album-img">
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225"
+                                alt="">
+                        </div>
+                        <div class="star-rating">
+                            <!--Contiene la valutazione rappresentata con delle stelle rosse-->
+                            <img src="" alt="">
+                        </div>
+                        <div class="artist-neme">
+                            <!--Nome dell'artista-->
+                            <h4>Arcade Fire</h4>
+                        </div>
+                        <div class="album-name">
+                            <!--Nome dell'album-->
+                            <h5>WE</h5>
+                        </div>
+                        <div class="album-review">
+                            <!--Anteprima della recenzione-->
+                            <p>Their first album in in five years sounds like a band circling the wagons</p>
+                        </div>
+                        <div class="link-review">
+                            <!--Link recenzione completa-->
+                            <a href="albumfullreview.html">Read more</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="album-review-box2">
+                    <!--Contiene tutte le recenzioni degli album-->
+                    <div class="review-box">
+                        <!--Recenzione singola-->
+                        <div class="album-img">
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225"
+                                alt="">
+                        </div>
+                        <div class="star-rating">
+                            <!--Contiene la valutazione rappresentata con delle stelle rosse-->
+                            <img src="" alt="">
+                        </div>
+                        <div class="artist-neme">
+                            <!--Nome dell'artista-->
+                            <h4>Arcade Fire</h4>
+                        </div>
+                        <div class="album-name">
+                            <!--Nome dell'album-->
+                            <h5>WE</h5>
+                        </div>
+                        <div class="album-review">
+                            <!--Anteprima della recenzione-->
+                            <p>Their first album in in five years sounds like a band circling the wagons</p>
+                        </div>
+                        <div class="link-review">
+                            <!--Link recenzione completa-->
+                            <a href="albumfullreview.html">Read more</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="album-review-box3">
+                    <!--Contiene tutte le recenzioni degli album-->
+                    <div class="review-box">
+                        <!--Recenzione singola-->
+                        <div class="album-img">
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225"
+                                alt="">
+                        </div>
+                        <div class="star-rating">
+                            <!--Contiene la valutazione rappresentata con delle stelle rosse-->
+                            <img src="" alt="">
+                        </div>
+                        <div class="artist-neme">
+                            <!--Nome dell'artista-->
+                            <h4>Arcade Fire</h4>
+                        </div>
+                        <div class="album-name">
+                            <!--Nome dell'album-->
+                            <h5>WE</h5>
+                        </div>
+                        <div class="album-review">
+                            <!--Anteprima della recenzione-->
+                            <p>Their first album in in five years sounds like a band circling the wagons</p>
+                        </div>
+                        <div class="link-review">
+                            <!--Link recenzione completa-->
+                            <a href="albumfullreview.html">Read more</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="album-review-box4">
+                    <!--Contiene tutte le recenzioni degli album-->
+                    <div class="review-box">
+                        <!--Recenzione singola-->
+                        <div class="album-img">
+                            <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/arcade-fire-album-review.jpg?crop=1:1,smart&w=225"
+                                alt="">
+                        </div>
+                        <div class="star-rating">
+                            <!--Contiene la valutazione rappresentata con delle stelle rosse-->
+                            <img src="" alt="">
+                        </div>
+                        <div class="artist-neme">
+                            <!--Nome dell'artista-->
+                            <h4>Arcade Fire</h4>
+                        </div>
+                        <div class="album-name">
+                            <!--Nome dell'album-->
+                            <h5>WE</h5>
+                        </div>
+                        <div class="album-review">
+                            <!--Anteprima della recenzione-->
+                            <p>Their first album in in five years sounds like a band circling the wagons</p>
+                        </div>
+                        <div class="link-review">
+                            <!--Link recenzione completa-->
+                            <a href="albumfullreview.html">Read more</a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </section>
+
+    </main>
+
 </body>
+
 </html>
