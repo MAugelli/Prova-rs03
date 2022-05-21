@@ -106,6 +106,7 @@ li:last-child a {
 .news-preview1 {
     grid-area: news-preview1;
     padding: 10px 10px;
+    border-right: 1px solid rgba(185, 179, 179, 0.651);
 }
 
 .news-preview2 {
@@ -116,11 +117,13 @@ li:last-child a {
 .news-preview3 {
     grid-area: news-preview3;
     padding: 10px 10px;
+    border-right: 1px solid rgba(185, 179, 179, 0.651)
 }
 
 .news-preview4 {
     grid-area: news-preview4;
     padding: 10px 10px;
+    border-right: 1px solid rgba(185, 179, 179, 0.651);
 }
 
 .news-preview5 {
@@ -136,13 +139,13 @@ li:last-child a {
 
 .news-section {
     text-decoration: underline;
-    text-decoration-color: var(--rs-color); 
+    text-decoration-color: var(--rs-color);
     font-weight: var(--rs-font-weight);
     font-size: smaller;
     margin: 5px 0px;
     color: #000;
     font-family: var(--rs-font);
-    
+
 }
 
 .news-title {
@@ -164,21 +167,50 @@ li:last-child a {
     font-family: var(--rs-font);
 }
 
+/* stile del area delle recenzione degli album */
+
+.album-title {
+    padding: 5px;
+    margin: 15px 15px;
+    border: var(--rs-red-border-width) solid var(--rs-color);
+    width: max-content;
+    font-size: var(--rs-h3-small);
+    font-weight: bolder;
+}
+
+#red-title {
+    color: var(--rs-color);
+}
+
 .album-review {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: normal;
-    align-content: center;
+    align-content: space-between;
     background-color: #f4f4f7;
+    text-align: center;
 }
 
 
-.album-review-box1 {}
+.album-review-box1,
+.album-review-box2,
+.album-review-box3,
+.album-review-box4 {
+    width: 25%;
+    padding: 15px 15px;
+}
 
-.album-review-box2 {}
+.album-text {
+    font-size: var(--rs-p-size);
+    font-family: var(--rs-font);
+}
 
-.album-review-box3 {}
-
-.album-review-box4 {}
+.link-review a {
+    display: block;
+    text-decoration: none;
+    color: var(--rs-color);
+    font-size: small;
+    font-weight: bolder;
+}
