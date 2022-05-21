@@ -37,6 +37,7 @@
     justify-content: center;
     align-items: normal;
     align-content: center;
+    background-color: #f4f4f7;
 }
   
 .album-review-box1 {
@@ -50,3 +51,12 @@
   
 .album-review-box4 {
 }
+
+.news-img{
+    height: 190px;
+    width: 285px;
+}
+
+
+
+
